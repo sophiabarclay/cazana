@@ -74,7 +74,6 @@ export default {
         "https://run.mocky.io/v3/6162e723-dd9c-48e1-8162-a7aa92d37591";
       this.$http.get(baseURI).then(result => {
         this.allData = result.data;
-        console.log(this.allData);
         this.allData.events.push({
           date: this.allData.firstRegistration,
           type: "FirstRegistration"
